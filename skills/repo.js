@@ -1,5 +1,5 @@
 module.exports = function(controller) {
-	var rasa = require('botkit-rasa')({rasa_uri: 'http://localhost:5000'});
+	var rasa = require('botkit-rasa')({rasa_uri: 'http://localhost:5000', rasa_project: 'default'});
 	controller.middleware.receive.use(rasa.receive);
 
 	controller.hears(['greet','bye','query'],'direct_message', rasa.hears, function(bot, message) {
