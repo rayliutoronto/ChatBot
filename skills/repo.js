@@ -7,15 +7,14 @@ module.exports = function(controller) {
 	    console.log('Intent:', message.intent);
 	    console.log('Entities:', message.entities);    
 
-	    bot.reply(message, 'hallo...')
-	});
-
-
-	controller.hears('.*', ['direct_message','direct_mention','mention'], function(bot, message) { 
-		bot.reply(message, "Sorry, I didn't get you.");
+		if(message.intent.confidence < 0.8){
+			bot.reply(message, "Sorry, I didn't get you.");
 		
-        bot.createConversation(message, startConv);
-	
+       		bot.createConversation(message, startConv);
+		}else{
+			bot.reply(message, 'hallo...')
+		}
+
 	});
 
 	startConv = function(message, conv) {
