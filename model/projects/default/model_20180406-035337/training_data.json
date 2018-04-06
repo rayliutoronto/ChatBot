@@ -1,0 +1,296 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hello", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hi", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "how are you today?", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hi there", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "how are you", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "good morning", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "good afternoon", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "bye", 
+        "intent": "bye"
+      }, 
+      {
+        "text": "bye bye", 
+        "intent": "bye"
+      }, 
+      {
+        "text": "thank you", 
+        "intent": "bye"
+      }, 
+      {
+        "text": "good bye", 
+        "intent": "bye"
+      }, 
+      {
+        "text": "thanks", 
+        "intent": "bye"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 8, 
+            "end": 18, 
+            "value": "newtest101", 
+            "entity": "dataset"
+          }, 
+          {
+            "start": 22, 
+            "end": 26, 
+            "value": "test", 
+            "entity": "application"
+          }
+        ], 
+        "intent": "query", 
+        "text": "show me newtest101 of test"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 8, 
+            "end": 18, 
+            "value": "newtest103", 
+            "entity": "dataset"
+          }, 
+          {
+            "start": 22, 
+            "end": 26, 
+            "value": "test", 
+            "entity": "application"
+          }
+        ], 
+        "intent": "query", 
+        "text": "show me newtest103 of test"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 8, 
+            "end": 18, 
+            "value": "newtest303", 
+            "entity": "dataset"
+          }, 
+          {
+            "start": 22, 
+            "end": 26, 
+            "value": "test", 
+            "entity": "application"
+          }
+        ], 
+        "intent": "query", 
+        "text": "show me newtest303 of test"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 19, 
+            "end": 22, 
+            "value": "app", 
+            "entity": "dataset"
+          }, 
+          {
+            "start": 26, 
+            "end": 30, 
+            "value": "test", 
+            "entity": "application"
+          }
+        ], 
+        "intent": "query", 
+        "text": "show me records of app of test"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 13, 
+            "end": 16, 
+            "value": "app", 
+            "entity": "dataset"
+          }, 
+          {
+            "start": 20, 
+            "end": 24, 
+            "value": "test", 
+            "entity": "application"
+          }
+        ], 
+        "intent": "query", 
+        "text": "please query app in test for me"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 16, 
+            "end": 19, 
+            "value": "app", 
+            "entity": "dataset"
+          }, 
+          {
+            "start": 25, 
+            "end": 29, 
+            "value": "test", 
+            "entity": "application"
+          }
+        ], 
+        "intent": "query", 
+        "text": "i'd like to get app from test"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 10, 
+            "end": 13, 
+            "value": "app", 
+            "entity": "dataset"
+          }, 
+          {
+            "start": 19, 
+            "end": 23, 
+            "value": "test", 
+            "entity": "application"
+          }
+        ], 
+        "intent": "query", 
+        "text": "can i get app from test"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 21, 
+            "end": 24, 
+            "value": "app", 
+            "entity": "dataset"
+          }, 
+          {
+            "start": 28, 
+            "end": 31, 
+            "value": "dts", 
+            "entity": "application"
+          }, 
+          {
+            "start": 35, 
+            "end": 38, 
+            "value": "SIT", 
+            "entity": "server"
+          }
+        ], 
+        "intent": "query", 
+        "text": "can i get records of app of dts on sit"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 21, 
+            "end": 24, 
+            "value": "app", 
+            "entity": "dataset"
+          }, 
+          {
+            "start": 28, 
+            "end": 31, 
+            "value": "dts", 
+            "entity": "application"
+          }, 
+          {
+            "start": 37, 
+            "end": 40, 
+            "value": "SIT", 
+            "entity": "server"
+          }
+        ], 
+        "intent": "query", 
+        "text": "can i get records of app of dts from sit"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 19, 
+            "end": 25, 
+            "value": "bagfee", 
+            "entity": "dataset"
+          }, 
+          {
+            "start": 29, 
+            "end": 36, 
+            "value": "culture", 
+            "entity": "application"
+          }, 
+          {
+            "start": 40, 
+            "end": 42, 
+            "value": "QA", 
+            "entity": "server"
+          }
+        ], 
+        "intent": "query", 
+        "text": "i need entities of bagfee of culture at qa"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 19, 
+            "end": 27, 
+            "value": "bag10fee", 
+            "entity": "dataset"
+          }, 
+          {
+            "start": 31, 
+            "end": 38, 
+            "value": "culture", 
+            "entity": "application"
+          }, 
+          {
+            "start": 51, 
+            "end": 53, 
+            "value": "QA", 
+            "entity": "server"
+          }
+        ], 
+        "intent": "query", 
+        "text": "i need entities of bag10fee of culture coming from qa"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 31, 
+            "end": 38, 
+            "value": "history", 
+            "entity": "dataset"
+          }, 
+          {
+            "start": 42, 
+            "end": 58, 
+            "value": "c3api_config_api", 
+            "entity": "application"
+          }
+        ], 
+        "intent": "query", 
+        "text": "may i have first 10 records of history of c3api_config_api"
+      }
+    ], 
+    "entity_synonyms": [], 
+    "regex_features": []
+  }
+}
